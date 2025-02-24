@@ -162,6 +162,8 @@ const car = new CCar(
 );
 
 car.print();
+///////
+
 
 // Проверка заморозки прототипа
 try {
@@ -169,7 +171,7 @@ try {
     CCar.prototype.newProperty = "Новое свойство";
     console.log("Новое свойство успешно добавлено в прототип.");
 } catch (e) {
-    if (e instanceof Error) { // Проверяем, что ошибка является экземпляром Error
+    if (e instanceof Error) {
         console.log("Ошибка: невозможно добавить свойство в замороженный прототип.");
     }
 }
